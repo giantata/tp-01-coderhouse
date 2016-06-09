@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/* selector universal */
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+
+body {
+	font-family: "realyway", sans-serif;
+	margin: 0;
+}
+
+.main-header {
+	   width: 1200px;
+	   margin: auto;
+	   padding: 20px 0;
+}
+
+.logo{
+	float: left;
+}
+
+.main-nav {
+	float: right;
+}
+/*selector descendiente*/
+.main-nav li{
+	float: left;
+	margin: 8px 0 0 15px;
+}
+
+.cleaner {
+	clear:  both;
+}
+
+#banner{
+	background: url(../imagenes/indexbanner-bg3.jpg) center top
+	no-repeat;
+	background-size: cover;
+}
+
+.container{
+	width: 1200PX;
+	margin: auto;
+}
+ 
+.banner-title{
+	font-size: 50px;
+	color : #fff;
+	padding-top: 120px;
+	margin: 0;
+}
+
+.banner-text{ 
+	font-size: 20px; 
+	color: #fff;
+}
+
+.register {
+	background-color: #06B4F2;
+	position: relative;
+	top: 30px;
+}
+
+.register input{
+	width: 1000px;
+	height: 60px;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+.register button {
+	border: none;
+	background-color: #06B4F2;
+	width: 195px;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.producto{
+	border: dashed 1px;
+	width: 300px;
+	text-align: center;
+	float: left;
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Resets */
+
+/* agrupacion de selectores */
+ul, ol{
+	list-style: none; /* elimina las viñetas */
+	margin: 0;
+	padding: 0}  /* quita relleno | padding-top: ; | padding-right: ; | padding-botton: ;*/
+
+figure{ 
+	margin: 0;
+}
+
+

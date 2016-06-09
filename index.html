@@ -2,33 +2,258 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Mi 1er documento en HTML5</title>
+	<title>Maquetación Básica</title>
+	<link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
-	<!--NO ANDA-->
-	<div>
-		una divicion
-	</div>
-	<p></p>
-	<nav>
-		barra de navegacíon
-	</nav>
-	<p></p>
-	<header>
-		una cabecera para el documento o le contenido	
+	<header class="main-header">
+		<figure class="logo">
+			<img src="imagenes/header-logo.png" alt="Logo Hostro">
+			<figcaption>Logo Hostro Hosting Services</figcaption>
+		</figure>
+
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html" >home</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+		<div class= "clenner"></div>	
 	</header>
 
-	<section></section>
-	<article></article>
+<!-- banner -->
 
-	<p></p>
-    <figure>
-    <figcaption></figcaption>
-    	<img src="" alt="">
-    </figure>
+	<div id="banner">
+		<div class="container">
+		<h2 class="banner-title">Regular Updates</h2>
+		<p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> temporibus dolores Officiis.</p>	
+		
+		
+			<form action="" class="register">
+				<input type="email"placeholder="Enter your name and hit enter">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+
+<!--producto destacado-->
+
+	<section class="container">
+		<article class="producto">
+			<figure>
+				<img src="imagenes/wid1.png" alt="sped server">
+			</figure>
+			<h4>SPEED SERVERS</h4>
+			<p>Lorem <stromg> ipsum dolor 
+			</stromg>sit amet, consectetur adipisicing elit.<em> temporibus dolores Officiis.</p>
+		</article>
+
+		<article class="producto">
+			<figure>
+				<img src="imagenes/wid2.png" alt="hostro service">
+			</figure>
+			<h4>HOSTRO SERVICES</h4>
+			<p>Lorem <em> ipsum dolor sit amet</em>, consectetur adipisicing elit.<br> temporibus dolores Officiis.</p>
+		</article>
+
+		<article class="producto">
+			<figure>
+				<img src="imagenes/wid3.png" alt="live support">
+			</figure>
+			<h4>live support</h4>
+			<p>Lorem <b> ipsum dolor sit amet</b>, consectetur adipisicing elit.<br> temporibus dolores	Officiis.</p>
+		</article>
+
+		<article class="producto">
+			<figure>
+				<img src="imagenes/wid4.png" alt="get doain name">
+			</figure>	
+			<h3>get doain name</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> temporibus dolores Officiis.</p>
+		</article>
+		<div class="cleaner"></div>
+	</section>	
+
+	<!--services-->
+
+	<section class="container">
+		<h2>Hostro Services</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+		<article>
+			<ul>
+				<li>
+					<h3>Retina Ready</h3>
+					<img src="imagenes/ser1.png" alt="Retina Ready">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+
+				<li>
+					<h3>Easy Customize</h3>
+					<img src="imagenes/ser2.png" alt="Easy Customize">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+	
+				<li>
+					<h3>Pixel Perfect</h3>
+					<img src="imagenes/ser3.png" alt="Pixel Perfect">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+			</ul>
+		</article>
+			<img src="imagenes/iphone2.png" alt="celular">
+
+		<article>
+			<ul>
+				<li>
+					<h3>Unlimited Colors</h3>
+					<img src="imagenes/ser4.png" alt="Unlimited Colors">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+
+				<li>
+					<h3>Features</h3>
+					<img src="imagenes/ser5.png" alt="Features">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+	
+				<li>
+					<h3>Suport Today</h3>
+					<img src="imagenes/ser6.png" alt="Suport Today">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</li>
+			</ul>
+		</article>   
+	</section> 
+
+	<!--Prices-->
+
+	<section>
+			<img src="imagenes/pricing-bg.jpg" alt="">
+		
+		<article class="container">
+				<h2>Pircing Tables</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		
+
+			<article>     
+                <h4>Small Package</h4>
+                <h2><sup>$</sup>15<sup>.9</sup></h2>
+                <p>/month</p>
+                <table>
+                    <tr>
+                        <td>Hard Drive, GB</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer, GB</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Data bases</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Dashboards</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                    <a href="#">Select plan</a>
+            </article>    
+        
+        	<article>     
+                <h4>Normal Package</h4>
+                <h2><sup>$</sup>45<sup>.9</sup></h2>
+                <p>/month</p>
+                <table>
+                    <tr>
+                        <td>Hard Drive, GB</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer, GB</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Data bases</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Dashboards</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+                    <a href="#">Select plan</a>
+        	</article>
+		
+        	<article>     
+                <h4>Big Package</h4>
+                <h2><sup>$</sup>95<sup>.9</sup></h2>
+                <p>/month</p>
+                <table>
+                    <tr>
+                        <td>Hard Drive, GB</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer, GB</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Data bases</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Dashboards</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+                   <a href="#">Select plan</a>
+        	</article>
+
+			<article>     
+                <h4>Best Package</h4>
+                <h2><sup>$</sup>115<sup>.9</sup></h2>
+                <p>/month</p>
+                <table>
+                    <tr>
+                        <td>Hard Drive, GB</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer, GB</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Data bases</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Dashboards</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+                    <a href="#">Select plan</a>
+        	</article>       
+     	</article>
+	</section>
+		
+<!--Pie de Pagian-->
+	
 	<footer>
-		un píe de página
+		<h3>Hosting use <span>500,000</span> happy customers. Want to see services?</h3>
+		<article>
+			<article class="container">
+				<p>© 2015 Coderland. All right reserved.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact</a></li>	
+					</ul>
+				</nav>
+			</article>
+		</article>
 	</footer>
-
+	
 </body>
-</html>
+</html>	
