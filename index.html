@@ -2,10 +2,14 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=divice-width">
 	<title>Maquetación Básica</title>
 	<link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
+
+<!-- Header -->
+
 	<header class="main-header">
 		<figure class="logo">
 			<img src="imagenes/header-logo.png" alt="Logo Hostro">
@@ -14,20 +18,19 @@
 
 		<nav class="main-nav">
 			<ul>
-				<li><a href="index.html" >home</a></li>
-				<li><a href="contact.html">contact</a></li>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<div class= "clenner"></div>	
+		<div class= "cleaner"></div>	
 	</header>
 
-<!-- banner -->
+<!-- Banner -->
 
 	<div id="banner">
 		<div class="container">
 		<h2 class="banner-title">Regular Updates</h2>
 		<p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> temporibus dolores Officiis.</p>	
-		
 		
 			<form action="" class="register">
 				<input type="email"placeholder="Enter your name and hit enter">
@@ -36,12 +39,12 @@
 		</div>
 	</div>
 
-<!--producto destacado-->
+<!--Productos Destacado-->
 
 	<section class="container">
 		<article class="producto">
 			<figure>
-				<img src="imagenes/wid1.png" alt="sped server">
+				<img src="imagenes/wid1.png" alt="speed server">
 			</figure>
 			<h4>SPEED SERVERS</h4>
 			<p>Lorem <stromg> ipsum dolor 
@@ -53,7 +56,7 @@
 				<img src="imagenes/wid2.png" alt="hostro service">
 			</figure>
 			<h4>HOSTRO SERVICES</h4>
-			<p>Lorem <em> ipsum dolor sit amet</em>, consectetur adipisicing elit.<br> temporibus dolores Officiis.</p>
+			<p>Lorem adipisicing elit. Voluptatem omnis numquam, ipsa facere doloremque.</p>
 		</article>
 
 		<article class="producto">
@@ -75,68 +78,70 @@
 	</section>	
 
 	<!--services-->
-
+	
 	<section class="container">
-		<h2>Hostro Services</h2>
+		<h2 class="title-services">Hostro Services</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-		<article>
-			<ul>
+		<article class="services1">
+			<ul> 
 				<li>
 					<h3>Retina Ready</h3>
 					<img src="imagenes/ser1.png" alt="Retina Ready">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
 				</li>
 
 				<li>
 					<h3>Easy Customize</h3>
 					<img src="imagenes/ser2.png" alt="Easy Customize">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
 				</li>
 	
 				<li>
 					<h3>Pixel Perfect</h3>
 					<img src="imagenes/ser3.png" alt="Pixel Perfect">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
 				</li>
+			</ul>
+	    </article>
+
+			<article class="phone">
+			<img src="imagenes/iphone2.png" alt="celular">
+			</article>
+		
+		<article class="services2">
+			<ul>
+			<li>
+				<h3>Unlimited Colors</h3>
+				<img src="imagenes/ser4.png" alt="Unlimited Colors">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
+				</li>
+
+			<li>
+				<h3>Features</h3>
+				<img src="imagenes/ser5.png" alt="Features">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
+			</li>
+	
+			<li>
+				<h3>Suport Today</h3>
+				<img src="imagenes/ser6.png" alt="Suport Today">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus consectetur maxime placeat et in sequi animi distinctio.</p>
+			</li>
 			</ul>
 		</article>
-			<img src="imagenes/iphone2.png" alt="celular">
-
-		<article>
-			<ul>
-				<li>
-					<h3>Unlimited Colors</h3>
-					<img src="imagenes/ser4.png" alt="Unlimited Colors">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-				</li>
-
-				<li>
-					<h3>Features</h3>
-					<img src="imagenes/ser5.png" alt="Features">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-				</li>
-	
-				<li>
-					<h3>Suport Today</h3>
-					<img src="imagenes/ser6.png" alt="Suport Today">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-				</li>
-			</ul>
-		</article>   
+		<div class="cleaner"></div>
 	</section> 
 
 	<!--Prices-->
-
-	<section>
-			<img src="imagenes/pricing-bg.jpg" alt="">
+        
+	<section class="pricing_table">
+	   <article class="container">
+	   		<div class="cleaner"></div>	
+	       	<h3>Pricing Tables</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		
-		<article class="container">
-				<h2>Pircing Tables</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		
-
-			<article>     
+			<article class="price_table">     
                 <h4>Small Package</h4>
                 <h2><sup>$</sup>15<sup>.9</sup></h2>
                 <p>/month</p>
@@ -158,17 +163,17 @@
                         <td>1</td>
                     </tr>
                 </table>
-                    <a href="#">Select plan</a>
+                <a href="#">Select plan</a>
             </article>    
         
-        	<article>     
+        	<article class="price_table">     
                 <h4>Normal Package</h4>
                 <h2><sup>$</sup>45<sup>.9</sup></h2>
                 <p>/month</p>
                 <table>
                     <tr>
-                        <td>Hard Drive, GB</td>
-                        <td>5</td>
+                        <td width="70%">Hard Drive, GB</td>
+                        <td width="30%">5</td>
                     </tr>
                     <tr>
                         <td>Transfer, GB</td>
@@ -183,10 +188,10 @@
                         <td>2</td>
                     </tr>
                 </table>
-                    <a href="#">Select plan</a>
+                <a href="#">Select plan</a>
         	</article>
 		
-        	<article>     
+        	<article class="price_table">     
                 <h4>Big Package</h4>
                 <h2><sup>$</sup>95<sup>.9</sup></h2>
                 <p>/month</p>
@@ -208,10 +213,10 @@
                         <td>5</td>
                     </tr>
                 </table>
-                   <a href="#">Select plan</a>
+                <a href="#">Select plan</a>
         	</article>
 
-			<article>     
+			<article class="price_table no-margin">     
                 <h4>Best Package</h4>
                 <h2><sup>$</sup>115<sup>.9</sup></h2>
                 <p>/month</p>
@@ -233,24 +238,26 @@
                         <td>10</td>
                     </tr>
                 </table>
-                    <a href="#">Select plan</a>
-        	</article>       
-     	</article>
-	</section>
+                <a href="#">Select plan</a>
+        	</article> 
+            <div class="cleaner"></div>
+        </article>
+    </section>
 		
 <!--Pie de Pagian-->
 	
-	<footer>
+	<footer class="main-footer">
 		<h3>Hosting use <span>500,000</span> happy customers. Want to see services?</h3>
-		<article>
+		<article class="bg-dark">
 			<article class="container">
-				<p>© 2015 Coderland. All right reserved.</p>
-				<nav>
+				<p class="copyright">© 2015 Coderland. All right reserved.</p>
+				<nav class="footer-nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="contact.html">Contact</a></li>	
 					</ul>
 				</nav>
+				<div class="cleaner"></div>
 			</article>
 		</article>
 	</footer>

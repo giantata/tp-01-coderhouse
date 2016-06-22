@@ -1,108 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 
-/* selector universal */
+  /* selector universal */
 *{
 	box-sizing: border-box;
 	/* descuenta del width y height, lo sumado en padding y border */
 }
 
-body {
+img{
+	max-width: 100%;
+}
+
+body{
 	font-family: "realyway", sans-serif;
 	margin: 0;
 }
-
-.main-header {
-	   width: 1200px;
-	   margin: auto;
-	   padding: 20px 0;
-}
-
-.logo{
-	float: left;
-}
-
-.main-nav {
-	float: right;
-}
-/*selector descendiente*/
-.main-nav li{
-	float: left;
-	margin: 8px 0 0 15px;
-}
-
-.cleaner {
-	clear:  both;
-}
-
-#banner{
-	background: url(../imagenes/indexbanner-bg3.jpg) center top
-	no-repeat;
-	background-size: cover;
-}
-
-.container{
-	width: 1200PX;
-	margin: auto;
-}
- 
-.banner-title{
-	font-size: 50px;
-	color : #fff;
-	padding-top: 120px;
-	margin: 0;
-}
-
-.banner-text{ 
-	font-size: 20px; 
-	color: #fff;
-}
-
-.register {
-	background-color: #06B4F2;
-	position: relative;
-	top: 30px;
-}
-
-.register input{
-	width: 1000px;
-	height: 60px;
-	font-size: 16px;
-	font-family: inherit;
-}
-
-.register button {
-	border: none;
-	background-color: #06B4F2;
-	width: 195px;
-	height: 60px;
-	color: #fff;
-	font-family: inherit;
-	font-size: 16px;
-}
-
-.producto{
-	border: dashed 1px;
-	width: 300px;
-	text-align: center;
-	float: left;
-	margin-top: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Resets */
 
 /* agrupacion de selectores */
 ul, ol{
@@ -114,4 +25,611 @@ figure{
 	margin: 0;
 }
 
+.main-header{
+   max-width: 1200px;
+   margin: auto;
+   padding: 20px 0;
+}
 
+.logo{
+   float: left;
+}
+
+.logo figcaption{
+   display: none;
+}
+ 
+.main-nav{
+	float: right;
+}
+
+  /*==Selector Descendiente==*/
+  
+.main-nav li{
+	float: left;
+	margin: 5px 0 0 15px;
+	font-size: 13px;
+  	font-weight: bold;
+}
+
+.main-nav li a{
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	color: #808080;
+  	letter-spacing: 2px;
+  	/*border: dashed 1px green;*/
+}
+
+.main-nav li a:hover{
+ 	color: #000;
+}
+
+.cleaner{
+	clear:  both;
+}
+
+#banner{
+	background: url(../imagenes/indexbanner-bg3.jpg) center top	no-repeat;
+	background-size: cover;
+}
+
+.container{
+	max-width: 1200PX;
+	margin: auto;
+	
+}
+ 
+.banner-title{
+	font-size: 50px;
+	color : #fff;
+	padding-top: 150px;
+	margin: 0;
+}
+
+.banner-text{ 
+	font-size: 20px; 
+	color: grey;
+}
+
+.register{
+	background-color: #06B4F2;
+	position: relative;
+	top: 30px;
+}
+
+.register input{
+	width: 83%;
+	height: 60px;
+	font-size: 16px;
+	padding: 0 15px;
+	font-family: inherit;
+}
+
+.register button {
+	border: none;
+	background-color: #06B4F2;
+	width: 16%;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: bold;
+ 	text-transform: uppercase;
+}
+
+.producto{
+	/*border: dashed 1px green;*/
+	width: 25%;
+	text-align: center;
+	float: left;
+	margin-top: 8%;
+	padding: 0 15px;
+}
+.producto h4{
+	text-transform: uppercase;
+}
+
+    /*--SERVICIOS--*/
+
+.title-services{
+ 	text-align: center;
+ 	margin-top: 100px;
+ 	font-size: 40px;
+ 	margin-bottom: 0;
+}
+ 
+ .title-services + p{
+ 	text-align: center;
+ 	margin: 0 0 100px;
+ 	font-size: 16px;
+}
+
+.services1{
+	width: 33.3%;
+	/*text-align: right;*/
+	float: left;
+}
+
+.services1 li{
+ 	position: relative;
+ 	text-align: right;
+ 	padding-right: 60px;
+ 	margin-bottom: 10px;
+}
+
+.services1 img{
+ 	position: absolute;
+ 	right: 0;
+ 	top: 0;
+}
+.phone{
+	width: 33.3%;
+	margin: auto;
+	text-align: center;
+	float: left;
+	padding: 0 15px;
+}
+
+.services2{
+	width: 33.3%;
+	/*text-align: left;*/
+	float: left;
+}
+
+.services2 li{
+ 	position: relative;
+ 	padding-left: 60px;
+ 	/*padding-right: 60px;
+ 	margin-bottom: 10px;*/
+}
+
+.services2 img{
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+}
+
+/* ---Precios--- */
+
+.pricing_table{
+	background: url(../imagenes/pricing-bg.jpg)	center top	no-repeat;
+	background-size: contain;
+	margin-top: -100px;
+	/*border:dashed 1px green;*/
+	/*text-align: center;*/
+}
+
+ .pricing_table h3{
+  	text-align: center;
+  	margin: 0;
+ 	padding: 50px 0 0;
+ 	font-size: 40px;
+  }
+  
+ .pricing_table h3 + p{
+ 	text-align: center;
+}
+.price_table{
+	/*background-color: #fff(255,0,0,0.2);*/
+	background-color: #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	/*box-shadow: 0 0 10px #000,
+ 		-5px -5px 10px rgba(0,0,0,0.5) inset;
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+ 	width: 20.38%;
+	padding: 25px;
+	padding: 40px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 40px;
+	margin-right: 50px;
+	border-radius: 20px;
+	border-radius: 5px;
+	text-align: center;
+	border:dashed 1px green;
+}*/
+
+width: 270px;
+	padding: 30px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 40px;
+	border-radius: 5px;
+	text-align: center;
+}
+.price_table h4{
+ 	text-transform: uppercase;
+ 	font-size: 20px;
+ }
+ 
+.price_table h2{
+	font-size: 50px;
+	margin: 0;
+}
+ 
+.price_table h2 sup{
+	font-size: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.price_table p{
+	margin: 0 0 30px;
+}
+
+.price_table table{
+	width: 100%;
+}
+
+.price_table td{
+	padding: 5px;
+}
+
+.price_table a{
+	display: block;
+	background-color: #26ABF6;
+	color: #fff;
+	border-radius: 5px;
+ 	margin-top: 10px;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.price_table:last-of-type{
+	margin-right: 0;
+}
+
+/*---FOOTER--*/
+
+.main-footer{
+     background-color: #233042;
+     margin-top: 80px;
+}
+
+.main-footer h3{
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	margin: 0;
+	padding: 60px 0;
+	font-weight: 400;
+}	
+ .main-footer h3 span{
+ 	color: #26ABF6;
+ 	font-weight: 700;
+ 	font-size: 40px;
+}
+
+.bg-dark{
+	background-color: #151D27;
+	padding: 30px 0;
+}
+.copyright{
+	float: left;
+	margin: 10px, 0 0;
+	font-weight: 100;
+	color: #fff;
+}
+.footer-nav{
+	float: right;
+	margin-top: 10px;
+}
+
+.footer-nav li{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.footer-nav a{
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 100px;
+}
+
+/*--BANNER CONTACTO--*/
+
+#banner-contact{
+ 	background: url(../imagenes/indexbanner-bg2.jpg) center top no-repeat;
+ 	background-size: cover;
+ }
+ 
+ /*--TEXTO BANNER CONTACTO--*/
+ 
+.contact-banner-title{
+ 	font-size: 50px;
+ 	color: #fff;
+ 	padding-top: 150px;
+ 	margin-top: 20px;
+  /*border: dashed 1px green;*/
+}
+ 
+.contact-banner-text{
+ 	font-size: 20px;
+ 	color: #fff;
+ 	padding-bottom: 150px;
+}
+ 
+.form-contact{
+  	width: 	100%;
+}
+.form-contact input{
+    box-shadow: 0px 1px 5px;
+}
+
+.contact-form-right{
+	float: 	left;	
+  	width: 	50%;
+}
+.contact-form-left{
+  	float: 	left;	
+  	width: 	50%;
+  	/*border: dashed 1px green;*/
+}
+.contact-form-left input{
+ 	width: 	100%;
+ 	height: 60px;
+ 	border: 1px solid #cbd0cb;
+ 	font-family: inherit;
+ 	font-size: 14px;
+ 	border-radius: 1px;
+  	padding-left: 10px;
+  	margin-bottom: 10px;
+  	margin-right: 3.33%;
+	box-shadow: 0px 1px 5px ;
+}
+
+/*.contact-form-right input{*/
+.contact-form-right textarea{
+  	width: 	100%;
+  	height: 200px;
+  	border: 1px solid #cbd0cb;
+  	font-family: inherit;
+  	font-size: 14px;
+  	border-radius: 1px;
+ 	padding-left: 10px;
+ 	margin-bottom: 10px;
+  	margin-left: 3.33%;
+ 	box-shadow: 0px 1px 5px;
+ 	/*border: dashed 1px green;*/
+}
+
+.button-form{
+  	text-align: center;
+ 	width: 100%;
+ 	/*border: dashed 1px green;*/
+}
+ /*************/
+/*---FOOTER--*/
+/************/
+
+.button-submit{
+ 	background-color: #06B4F2;
+ 	border: none;
+ 	color: #fff;
+ 	font-family: inherit;
+ 	text-transform: uppercase;
+ 	width: 11%;
+ 	padding-top: 13px;
+ 	padding-bottom: 13px;
+ 	font-size: 14px;
+  	margin-top: 20px;
+  	letter-spacing: 1.5px;
+  	border-radius: 4px;
+	min-width: 70px;
+}
+
+    /*****************************
+    ******* MEDIA-QUERIES ********
+    *****************************/
+		
+/*******MEDIUN*********/
+	
+@media(max-width:800px) {
+	.container, .main-header{
+		width: 95%;
+	}
+	 
+	.producto{
+		width: 50%;
+		margin-top: 80px;
+	}
+
+	.service1, .phone, .service2{
+		float: none;
+		width: 100%;
+	}
+
+	.main-header{
+		float: none;
+ 	}
+
+ 	.main-nav{
+		float: none;	
+	}
+
+ 	.logo{
+ 		float: none;
+ 		text-align: left;
+ 		display: block;
+ 	}
+
+ 	.main-nav ul li{
+ 		float: none;
+ 		display: block;
+ 		text-align: center;
+ 		margin-top: 10px;
+ 	}
+
+	.pricing_table{
+		margin-top: 0;
+	}
+
+	.price_table{
+		width: 48%;
+		margin-right: 4%;
+	}
+
+	.price_table: nth-of-typed(even){
+		margin-right: 0;
+	}
+
+	.price_table h4{
+		font-size: 15px;
+	}
+
+	.price_table h2{
+		font-size: 40px;
+	}
+
+	.price_table table{
+		font-size: 13px;
+	}
+
+ 	.button-form{
+ 		text-align: center;
+ 		width: 100%;
+ 	}
+ 
+ 	.button-submit{
+ 		text-align: center;
+ 		font-size: 11px;
+ 	}
+}
+	
+	/******SMALL******/
+		
+@media(max-width:600px) {
+	.container, .main-header{
+ 		width: 95%
+ 	}
+	
+	.logo{
+ +	float: none;
+ +	text-align: center;
+ +	}
+ +	.main-nav{
+ +	float: none;
+ +	}
+ +	.main-nav li{
+ +		float: none;
+ +		text-align: center;
+ +	}
+ +	#banner{
+ +		background-image: none;
+ +	}
+ +
+ +	.banner-title{
+ +		display: none;
+ +	}
+ +	.banner-text{
+ +		display: none;
+ +	}
+ +	.register{
+ +		top: 0;
+ +	}
+ +	.register input{
+ +		text-indent: 5;
+ +		font-size: 13px;
+ +		width: 75%;
+ +	}
+ +	.register button{
+ +		width: 20%;
+ +	}
+ +	.copyright{
+ +		float: none;
+ +		font-size: 13px;
+ +		text-align: center;
+ +	}
+ +	.footer-nav{
+ +		float: none;
+ +		padding-top: 0;
+ +		text-align: center;
+ +	}
+ +	.footer-nav li{
+ +		font-size: 10px;
+ +	}
+ +	.main-footer h3{
+ +		font-size: 20px;
+ +	}
+ +	.main-footer h3 span{
+ +		font-size: 30px;
+ +	}
+ +}
+
+	/******XSMALL******/
+		
+@media (max-width:460px){
+  	.register input{
+ 		width: 75%;
+ 		font-size: 12px;
+ 		padding: 0;
+ 	}
+ 
+ 	.register button{
+ 		width: 20%;
+ 	}
+ 
+ 	.producto {
+ 		width: 100%;
+ 		margin-top: 50px;
+ 	}
+ 
+ 	.price-table h3 {
+ 		font-size: 5px;
+ 	}
+ 	.price-table h4 {
+ 			font-size: 12px;
+ 	}
+ 
+ 	.price-table table {
+ 			font-size: 9px;
+ 	}
+ 
+ 	.price-table a{
+ 		padding: 5px;
+ 		letter-spacing: 1px;
+ 		font-size: 13px;
+ 	}
+ }
+
+  	/**********************
+   	 Media Queries Contact
+  	**********************/
+  
+ 	/******SMALL******/
+ 
+ 	@media (max-width: 700px){
+     #banner-contact{
+        background-image: none;
+        height: 120px;
+    }
+ 
+    .banner-contact{
+     	display: none;
+    }
+
+    .submit-title{
+        margin: 0;
+      	top: -30px;
+    }
+
+    #left{
+        width: 100%;
+        float: none;
+    }
+
+    #right{
+        width: 100%;
+        float: none;
+	}
+
+  /***** XSMALL*****/
+
+ @media (max-width: 420px){
+     .button-text{
+        
+    }
+ }
+ 
